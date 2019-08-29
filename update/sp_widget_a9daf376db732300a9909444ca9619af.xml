@@ -13,6 +13,7 @@
 			c.data.note = r.data.note.note;
 			c.data.noteID = r.data.note.sys_id;
 		});
+		console.log('Listener caught NoteID: ' + $rootScope.noteID); 
 	});
 	c.updateNote = function(updateType) {
 		c.server.get({
@@ -31,13 +32,13 @@
         <description/>
         <docs/>
         <field_list/>
-        <has_preview>false</has_preview>
+        <has_preview>true</has_preview>
         <id>notes_body</id>
         <internal>false</internal>
         <link/>
         <name>Notes Body</name>
         <option_schema/>
-        <public>false</public>
+        <public>true</public>
         <roles/>
         <script><![CDATA[(function() {
 	/* populate the 'data' object */
@@ -62,14 +63,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-02-27 11:50:49</sys_created_on>
         <sys_id>a9daf376db732300a9909444ca9619af</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Notes Body</sys_name>
         <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
         <sys_policy/>
         <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
         <sys_update_name>sp_widget_a9daf376db732300a9909444ca9619af</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-27 15:11:06</sys_updated_on>
+        <sys_updated_on>2019-08-29 11:51:56</sys_updated_on>
         <template><![CDATA[<!-- div -->
 <!-- your widget template -->
 <!-- /div -->
